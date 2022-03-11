@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JokeActivity"
+    >
+
+    <include
+        layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <TextView
+        android:id="@+id/setup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="setup"
+        android:gravity="center_horizontal"
+        android:textSize="16dp"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/punchline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="punchline"
+        android:gravity="center_horizontal"
+        android:textSize="16dp"
+        android:padding="16dp"
+        android:visibility="invisible"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reveal_button"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_margin="32dp"
+        android:onClick="revealPunchline"/>
+
+
+
+
+
+</LinearLayout>
